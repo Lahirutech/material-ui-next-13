@@ -1,0 +1,20 @@
+first install the core material ui in your next js project
+
+npm install @mui/material @emotion/react @emotion/styled
+
+Then install the nextjs dependancies
+
+npm install @mui/material-nextjs @emotion/cache
+
+In layout .tsx
+
+Add <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+enableCssLayer to support css modules
+Create theme.ts file
+if you want to know what to send when doing createTheme have alook at
+https://mui.com/material-ui/customization/theming/
+
+Add <ThemeProvider> to wrap the children </ThemeProvider>
+
+
+
